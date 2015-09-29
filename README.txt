@@ -1,14 +1,18 @@
 # AStar_Dual_Tree_HandPose
-A hand pose estimation system using dual-KD-trees
+A fast NN hand-pose estimation system using dual-KD-trees.
+Also includes implementations for various-SVM (inc. part models) and
+tree based methods.
+
+Please direct questions to jsupanci@uci.edu
 
 Compile w/ 
-(1) cmake .
+(1) cmake . 
 (2) make -jX
 
 Run as
 ./deformable_depth eval_model CFG=myconfig_file.cfg
 
-Configuration file options:
+# Configuration file options:
 HEAP_PROF=FALSE # profile where the memory is being used...
 JOINT_C=10 # for using SVMs
 NUM_CPUS=20 # how many CPUs to use?

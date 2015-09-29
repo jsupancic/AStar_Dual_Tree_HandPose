@@ -1,0 +1,6 @@
+*.sdf
+*.sln
+!.gitignore
+*vcxproj*
+*vcproj*
+*.yml
