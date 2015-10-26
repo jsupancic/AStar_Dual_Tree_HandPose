@@ -55,3 +55,5 @@ paper/hands.brf
 models/dhf15.yml
 paper/hands_eccv.brf
 paper/hands_eccv.txt
+!CMakeLists.txt
+!local.cmake
