@@ -5,6 +5,15 @@ tree based methods.
 
 Please direct questions to jsupanci@uci.edu
 
+Requirements
+(1) OpenCV >= 3.0
+(2) A C++11 compatible compiler
+(3) Boost
+(4) OpenNI 2.2 is needed to train/test with .oni files
+(5) GLUT, OpenGL and LibHand are required to synthesize training data
+    (this requirement can be disabled by editing local.cmake)
+(6) OpenSSL, required for computing hashes for cache IDs. 
+
 Compile w/ 
 (1) cmake . 
 (2) make -jX

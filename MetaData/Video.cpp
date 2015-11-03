@@ -22,7 +22,6 @@
 #include "ASTAR_Hands.hpp"
 #include "Orthography.hpp"
 #include "Colors.hpp"
-#include "PTB.hpp"
 
 namespace deformable_depth 
 {
@@ -561,8 +560,8 @@ namespace deformable_depth
       log_file << printfpp("Loading video %s w/ ext = %s",filename.c_str(),vid_path.extension().c_str()) << endl;
       if(vid_path.extension() == ".ASTAR_HANDS")
 	ptr = make_shared<ASTAR_Video>(fromString<int>(vid_path.stem().string()));
-      else if(vid_path.extension() == ".PTB")
-	ptr = make_shared<PTB_Video>(vid_path.stem().string());
+      //else if(vid_path.extension() == ".PTB")
+      //ptr = make_shared<PTB_Video>(vid_path.stem().string());
       else if(vid_path == "0.NYU_HANDS")
 	ptr = make_shared<NYU_Video>();
       else

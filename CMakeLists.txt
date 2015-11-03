@@ -25,7 +25,7 @@ SET(CMAKE_CXX_COMPILER "/usr/bin/g++-4.9.3")
 # tell Cmake where to find OpenCL configurations...                                                                                                         
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})                                                                                                            
 # we will be using OpenCV for this project                                                                               
-FIND_PACKAGE( OpenCV REQUIRED )                                                                                                                             
+FIND_PACKAGE( OpenCV 3.0.0 REQUIRED )                                                                                                                             
 # we will also be using Boost (Mostly for filesystem operations)  
 FIND_PACKAGE( Boost COMPONENTS REQUIRED system filesystem thread regex)
 include(local.cmake)

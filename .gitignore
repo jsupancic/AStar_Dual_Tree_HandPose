@@ -57,3 +57,5 @@ paper/hands_eccv.brf
 paper/hands_eccv.txt
 !CMakeLists.txt
 !local.cmake
+scripts
+skin_hist.yml
